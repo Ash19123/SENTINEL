@@ -1,0 +1,15 @@
+# runtime output
+Lightweight_IoT_IDS/logs/
+Lightweight_IoT_IDS/models/
+Lightweight_IoT_IDS/evidence/
+Lightweight_IoT_IDS/experiments/data/
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+# editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

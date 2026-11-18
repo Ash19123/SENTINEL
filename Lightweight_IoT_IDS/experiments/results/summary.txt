@@ -1,0 +1,44 @@
+Held-out results (rule parameters chosen on the other recording; both directions pooled)
+
+[hybrid] LIVE RULE (5 s windows, 2 in a row): detected 40/40 bursts, median TTD 8.6s, false alarms 0.0/h over 1.54 h
+      runA: detected 20/20, median 8.6s
+      runB: detected 20/20, median 8.2s
+[if] LIVE RULE (5 s windows, 2 in a row): detected 20/40 bursts, median TTD infs, false alarms 0.0/h over 1.54 h
+      runA: detected 20/20, median 8.6s
+      runB: detected 0/20, median infs
+
+[hybrid] budget <= 6 false alarms/hour
+  W  hop   rule        param  median TTD    p90     det   FA/h
+  1  0.5  fixed   [3.0, 2.0]        1.3s   1.8  39/40     5.2
+  3    1  fixed   [2.0, 2.0]        1.9s   2.4  40/40     0.0
+  5    1  fixed   [2.0, 2.0]        2.0s   2.7  40/40     0.0
+  1  0.5  cusum  [13.0, 5.5]        2.2s   2.8  39/40    17.7
+  2    1  fixed   [3.0, 2.0]        2.3s   3.2  40/40     1.1
+  2  0.5  fixed   [5.0, 2.0]        2.5s   3.0  39/40     2.2
+  3    1  cusum   [8.5, 5.5]        2.7s   4.4  40/40     0.8
+  2  0.5  cusum  [20.0, 7.0]        3.0s   3.5  39/40     2.2
+  5    1  cusum  [13.0, 5.5]        3.4s   5.7  40/40     1.1
+  2    1  cusum  [13.0, 5.5]        4.3s   5.2  40/40     1.9
+  5    5  fixed   [2.0, 2.0]        8.6s  10.1  40/40     0.0
+  5    5  cusum   [7.5, 5.5]       10.5s  14.4  39/40     0.0
+
+[hybrid] budget <= 12 false alarms/hour
+  W  hop   rule        param  median TTD    p90     det   FA/h
+  1  0.5  fixed   [2.0, 2.0]        1.1s   1.3  39/40     5.2
+  1  0.5  cusum   [8.5, 5.5]        1.3s   1.8  39/40    18.8
+  2    1  fixed   [2.0, 2.0]        1.8s   2.2  40/40     1.1
+  3    1  fixed   [2.0, 2.0]        1.9s   2.4  40/40     0.0
+  2  0.5  fixed   [4.0, 2.0]        2.0s   2.5  39/40     2.2
+  5    1  fixed   [2.0, 2.0]        2.0s   2.7  40/40     0.0
+  2    1  cusum   [8.5, 5.5]        2.3s   3.2  40/40     1.9
+  5    1  cusum   [8.5, 5.5]        2.4s   3.7  40/40     1.1
+  2  0.5  cusum  [17.5, 7.0]        2.5s   3.0  39/40     2.2
+  3    1  cusum   [8.5, 5.5]        2.7s   4.4  40/40     0.8
+  5    5  fixed   [1.0, 2.0]        5.5s   9.8  40/40     1.9
+  5    5  cusum   [3.5, 5.5]        8.6s  10.1  40/40     0.0
+
+[if] budget <= 6 false alarms/hour
+  W  hop   rule        param  median TTD    p90     det   FA/h
+
+[if] budget <= 12 false alarms/hour
+  W  hop   rule        param  median TTD    p90     det   FA/h
